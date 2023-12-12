@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+
+<head>
+	<title>Kayla's Portfolio</title>
+</head>
+
+<style>
+	/* fonts */
+	@font-face {
+		font-family: Goldfish;
+		src: url(Goldfish.ttf);
+	}
+	@font-face {
+		font-family: mont;
+		src: url(Mont-HeavyDEMO.ttf);
+	}
+	@font-face {
+		font-family: mont light;
+		src: url(Mont-ExtraLightDEMO.ttf);
+	}
+	@font-face {
+		font-family: candy;
+		src: url(Candy.ttf);
+	}
+
+
+	/* decorations */
+	.decorations {
+		color: #A1C181;
+		position: absolute;
+		top: 0;
+		width: 99vw;
+	}
+	.decgroup1 {
+		width: 150px;
+		height: 150px;
+		position: absolute;
+		top: 100px;
+		right: 75px;
+	}
+	.decgroup1 h1 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		font-size: 100px;
+	}
+	.decgroup1 h2 {
+		position: absolute;
+		top: 0;
+		font-size: 75px;
+		transform: translate(-10px,-10px);
+	}
+	.decgroup1 h3 {
+		position: absolute;
+		top: 0;
+		right: 50px;
+		font-size: 50px;
+		transform: translate(0px, -35px);
+	}
+
+
+	/* pages */
+	.page1 {
+		position: relative;
+		top: 0;
+	}
+	.page2 {
+		position: relative;
+		bottom: 0;
+	}
+	.page3 {
+		position: relative;
+		bottom: 0;
+	}
+	.page4 {
+		position: relative;
+		bottom: 0;
+	}
+	.page5 {
+		position: relative;
+		bottom: 0;
+	}
+	.page6 {
+		position: relative;
+		bottom: 0;
+	}
+	.page7 {
+		position: relative;
+		bottom: 0;
+	}
+
+
+	/* page 1 */
+	body{
+		background-color: #F5EBE0;
+	}
+	a {
+    	font-family: mont light;
+    	color: #432818;
+    }
+	.picture{
+		width: 45vw;
+		height: 100vh;
+		left: 0;
+		top: 0;
+		position: relative;
+	}
+	.picture img{
+		width: 35vw;
+		height: auto;
+		position: absolute;
+		right: 10px;
+		top: 50%;
+		transform: translate(0px,-50%);
+		border-radius: 15px;
+	}
+	.main{
+		width: 50vw;
+		height: 100vh;
+		right: 0;
+		top: 0;
+		position: absolute;
+	}
+	.header-text {
+		position: absolute;
+		top: 20%;
+	}
+	.header-text h1{
+		font-family: Goldfish;
+		font-size: 75px;
+		color: #432818;
+	}
+	.list {
+		top: 40%;
+		position: absolute;
+	}
+	.list li{
+		font-family: mont;
+		font-size: 18px;
+		color: #432818;
+		letter-spacing: 5px;
+	}
+	.sections {
+		width: 40vw;
+		height: 25vh;
+		top: 55%;
+		position: absolute;
+	}
+	.sections button {
+		position: absolute;
+		height: 40px;
+		width: 75%;
+		border-radius: 20px;
+		background-color: #FEAE79;
+		border-color: transparent;
+		font-family: Goldfish;
+		letter-spacing: 2px;
+		font-size: 20px;
+		color: #FE6804;
+	}
+	.sections table{
+		transform: translate(0px,45px);
+		border-collapse: collapse;
+		margin: 8px;
+		color: #432818;
+	}
+	.sections td{
+		border: solid 2px transparent;
+	}
+	.sections ul {
+		position: absolute;
+		top: 40px;
+		list-style: none;
+		padding: 0px;
+		font-family: mont light;
+		color: #432818;
+	}
+	.sections li {
+		padding: 5px;
+	}
+	.sections li::before{
+            content: "\21AA  "; 
+    }
+    .contact {
+		width: 45%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		position: absolute;
+	}
+	.contact img {
+    	width: 40px;
+    	height: auto;
+    	padding-right: 25px;
+    }
+    .contact td{
+    	font-family: mont;
+    	text-align: left;
+    }
+    .contact a:hover{
+    	color: #629C80
+    }
+	.portfolio {
+		width: 45%;
+		height: 100%;
+		right: 0;
+		top: 0;
+		position: absolute;
+		display: flex;
+		justify-content: center;
+	}
+	.portfolio a {
+		text-decoration: none;
+	}
+
+
+	/* page 2 */
+	.intro {
+		position: relative;
+		width: 99vw;
+		left: 0;
+		bottom: 0;
+
+	}
+	.analytics {
+		position: absolute;
+		top: 5vh;
+		width: 30vw;
+		height: 60vh;
+		left: 5vw;
+		display: flex;
+		justify-content: center;
+	}
+	.stats {
+		width: 25vw;
+		height: 9vw;
+		position: relative;
+		top: 35vh;
+		background-color: rgba(161, 193, 129, 0.75);
+		border-radius: 15px;
+		background-opacity: 50%;
+	}
+	.stats img {
+		position: relative;
+		width: 95%;
+		border-radius: 15px;
+		top: 0.6vw;
+	}
+	.headshot {
+		position: absolute;
+		top: 0;
+		width: 15vw;
+		height: auto;
+		border-radius: 15px;
+		background-color: #FEAE79;
+		padding: 10px;
+	}
+	.intro-right{
+		position: relative;
+		width: 50vw;
+		left: 42vw;
+		font-family: mont light;
+		font-size: 20px;
+	}
+	.introp {
+		background-color: #A1C181;
+		border-radius: 15px;
+		padding-right: 30px;
+		padding-left: 30px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.intro h1 {
+		font-family: Goldfish;
+		font-size: 40px;
+		padding-left: 30px;
+		color: #394D26;
+	}
+	.introemail {
+		position: relative;
+		font-family: mont light;
+		right: 0;
+		font-size: 15px;
+		display: flex;
+		justify-content: right;
+		padding-right: 20px;
+		padding-top: 125px;
+	}
+	/* page 3+ */
+	.examples {
+		position: relative;
+		bottom: 0;
+	}
+	.examples h1 {
+		position: relative;
+		font-family: candy;
+		font-size: 40px;
+		color: #432818;
+	}
+	.examples video {
+		position: relative;
+		border-radius: 15px;
+		width: 230px;
+		height: auto;
+	}
+	.examples th,td {
+		padding-left: 15px;
+		padding-right: 15px;
+		text-align: center;
+	}
+	.examples th {
+		font-family: Goldfish;
+	}
+	.examples td {
+		font-family: mont light;
+		font-size: 12px;
+	}
+	.examples iframe {
+		border-radius: 15px;
+	}
+	.ytvideos {
+		display: inline;
+		padding: 10px;
+	}
+	.block {
+		display: inline-flex;
+		justify-content: center;
+	}
+	.column {
+		float: left;
+		width: 20%;
+		padding: 10px;
+	}
+	.column img {
+		margin-top: 12px;
+		width: 100%;
+		border-radius: 15px;
+		border-color: #432818;
+		border-width: 4px;
+		border-style: solid;
+	}
+	.column video {
+		margin-top: 12px;
+		width: 100%;
+	}
+</style>
+
+<body>
+<div class="decorations">
+		<div class="decgroup1">
+			<h1>&#x273F;</h1>
+			<h2>&#x273F;</h2>
+			<h3>&#x273F;</h3>
+		</div>
+</div>
+
+<div class="page1">
+	<div class="picture">
+		<img src="IMG_9757.jpeg">
+	</div>
+
+	<div class="main">
+		<div class="header-text">
+			<h1>Kayla Redman</h1>
+		</div>
+		<div class="list">
+			<ul>
+				<li>UGC Creator</li>
+				<li>Aspiring Creative Director</li>
+			</ul>
+		</div>
+		<div class="sections">
+			<div class="contact">
+				<button>contact</button>
+				<table>
+					<tr>
+						<td rowspan="2"><img src="mail.png"></td>
+						<td>email</td>
+					</tr>
+					<tr>
+						<td style="font-family: mont light;"><a href="mailto:kayla@webfeather.com">kayla@webfeather.com</a></td>
+					</tr>
+					<tr>
+						<td rowspan="2"><a href="https://www.instagram.com/kaylafayrie/"><img src="instagram.png"></a></td>
+						<td>instagram</td>
+					</tr>
+					<tr>
+						<td><a href="https://www.instagram.com/kaylafayrie/">@kaylafayrie</td>
+					</tr>
+					<tr>
+						<td rowspan="2"><a href="https://www.tiktok.com/@kaylafayrie"><img src="tiktok.png"></a></td>
+						<td>tik tok</td></td>
+					</tr>
+					<tr>
+						<td><a href="https://www.tiktok.com/@kaylafayrie">@kaylafayrie</a></td>
+					</tr>
+					<tr>
+						<td rowspan="2"><a href="https://twitter.com/kaylafayrie"><img src="twitter.png"></a></td>
+						<td>twitter</td>
+					</tr>
+					<tr>
+						<td><a href="https://twitter.com/kaylafayrie">@kaylafayrie</a></td>
+					</tr>
+					<tr>
+						<td rowspan="2"><a href="https://www.linkedin.com/in/kayla-redman"><img src="linkedin.png"></a></td>
+						<td>linkedin</td>
+					</tr>
+					<tr>
+						<td><a href="https://www.linkedin.com/in/kayla-redman">Kayla Redman</a></td>
+					</tr>
+				</table>
+			</div>
+
+			<div class="portfolio">
+				<button>portfolio</button>
+				<ul>
+					<li><a href="#beauty">Beauty & Skincare</a></li>
+					<li><a href ="#fashion">Fashion</a></li>
+					<li><a href="#music">Music</a></li>
+					<li><a href="#youtube">Youtube</a></li>
+					<li><a href="#design">Design</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="page2">
+	<div class="intro">
+		<div class="analytics">
+			<img src="IMG_9757.jpeg" class="headshot">
+			<div class="stats">
+				<center><img src="stats1.jpeg">
+				<img src="stats2.jpeg"></center>
+			</div>
+		</div>
+		<div class="intro-right">
+			<div class="introp">
+			<h1>Hi, I'm Kayla!</h1>
+			<p>I'm a 20-year old undergrad student based in the Bay Area, CA. Being Gen-Z, I'm always up-to-date with what's trending online and across different platform. Using my knowledge of social media, video-editing, and marketing I can help you <b><u>reach your target audience</u></b> through UGC.</p>
+			<p>I have built up a social media presence across Tik Tok, Instagram, and Youtube, with 2k followers combined. I have mastered what it means to be <b><u>authentic</u></b> and <b><u>aesthetic</u></b> at the same time!</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="examples">
+	<div class="page3">
+		<p class="introemail">contact: <a href="mailto:kayla@webfeather.com">kayla@webfeather.com</a></p>
+		<a id="beauty"><center><h1>Beauty and Skincare</h1></a>
+		<div class="tiktoks">
+		<table>
+			<tr>
+				<th>
+					<video controls autoplay muted playsinline>
+						<source src="barttiktok.mp4" type="video/mp4">
+					</video>
+				</th>
+				<th>
+					<video controls autoplay muted playsinline>
+						<source src="barttiktok.mp4" type="video/mp4">
+					</video>
+				</th>
+				<th>
+					<video controls autoplay muted playsinline>
+						<source src="barttiktok.mp4" type="video/mp4">
+					</video>
+				</th>
+				<th>
+					<video controls autoplay muted playsinline>
+						<source src="barttiktok.mp4" type="video/mp4">
+					</video>
+				</th>
+				<th>
+					<video controls autoplay muted playsinline>
+						<source src="barttiktok.mp4" type="video/mp4">
+					</video>
+				</th>
+			</tr>
+			<tr>
+				<th>Brand</th>
+				<th>Brand</th>
+				<th>Brand</th>
+				<th>Brand</th>
+				<th>Brand</th>
+			</tr>
+			<tr>
+				<td>product</td>
+				<td>product</td>
+				<td>product</td>
+				<td>product</td>
+				<td>product</td>
+		</table>
+		</center>
+	</div>
+
+	<div class="page4">
+		<p class="introemail">contact: <a href="mailto:kayla@webfeather.com">kayla@webfeather.com</a></p>
+		<a id="fashion"><center><h1>Fashion</h1></a>
+		<div class="tiktoks">
+		<table>
+			<tr>
+				<th>
+					<video controls autoplay muted playsinline>
+						<source src="pickingoutfit.mp4" type="video/mp4">
+					</video>
+				</th>
+				<th>
+					<video controls autoplay muted playsinline>
+						<source src="pickingoutfit.mp4" type="video/mp4">
+					</video>
+				</th>
+				<th>
+					<video controls autoplay muted playsinline>
+						<source src="pickingoutfit.mp4" type="video/mp4">
+					</video>
+				</th>
+				<th>
+					<video controls autoplay muted playsinline>
+						<source src="pickingoutfit.mp4" type="video/mp4">
+					</video>
+				</th>
+				<th>
+					<video controls autoplay muted playsinline>
+						<source src="pickingoutfit.mp4" type="video/mp4">
+					</video>
+				</th>
+			</tr>
+			<tr>
+				<th>Brand</th>
+				<th>Brand</th>
+				<th>Brand</th>
+				<th>Brand</th>
+				<th>Brand</th>
+			</tr>
+			<tr>
+				<td>product</td>
+				<td>product</td>
+				<td>product</td>
+				<td>product</td>
+				<td>product</td>
+		</table>
+		</center>
+	</div>
+
+	<div class="page5">
+		<p class="introemail">contact: <a href="mailto:kayla@webfeather.com">kayla@webfeather.com</a></p>
+		<a id="music"><center><h1>Music</h1></a>
+		<div class="tiktoks">
+		<table>
+			<tr>
+				<th>
+					<video controls autoplay muted playsinline>
+						<source src="newmusictikok.mp4" type="video/mp4">
+					</video>
+				</th>
+				<th>
+					<video controls autoplay muted playsinline>
+						<source src="newmusictikok.mp4" type="video/mp4">
+					</video>
+				</th>
+				<th>
+					<video controls autoplay muted playsinline>
+						<source src="newmusictikok.mp4" type="video/mp4">
+					</video>
+				</th>
+				<th>
+					<video controls autoplay muted playsinline>
+						<source src="newmusictikok.mp4" type="video/mp4">
+					</video>
+				</th>
+				<th>
+					<video controls autoplay muted playsinline>
+						<source src="newmusictikok.mp4" type="video/mp4">
+					</video>
+				</th>
+			</tr>
+			<tr>
+				<th>Brand</th>
+				<th>Brand</th>
+				<th>Brand</th>
+				<th>Brand</th>
+				<th>Brand</th>
+			</tr>
+			<tr>
+				<td>product</td>
+				<td>product</td>
+				<td>product</td>
+				<td>product</td>
+				<td>product</td>
+		</table>
+		</center>
+	</div>
+
+	<div class="page6">
+		<p class="introemail">contact: <a href="mailto:kayla@webfeather.com">kayla@webfeather.com</a></p>
+
+		<a id="youtube"><center><h1>Youtube</h1></a>
+			<div class="ytvideos">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/859tNYk0v4s?si=78SfI7x2_qo7bF8K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</div>
+
+			<div class="ytvideos">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/wVYKR9c9-ZM?si=SlLy8k0NYmdbAlPI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</div>
+		</center>
+	</div>
+
+	<div class="page7">
+		<p class="introemail">contact: <a href="mailto:kayla@webfeather.com">kayla@webfeather.com</a></p>
+
+		<a id="design"><center><h1>Design</h1></center></a>
+		<div class="block">
+			<div class="column">
+				<img src="scoobydoo.png">
+				<img src="yellownature.gif">
+			</div>
+			
+			<div class="column">
+				<img src="pinkmilk.gif">
+				<img src="elf.png">
+				<img src="catscreen.gif">
+			</div>
+			
+			<div class="column">
+				<img src="blingo.png">
+				<img src="frogs.gif">
+			</div>
+			
+			<div class="column">
+				<img src="kate.gif">
+				<img src="rammy.gif">
+				<img src="kaylafayrie.gif">
+
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
